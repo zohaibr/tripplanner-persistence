@@ -28,5 +28,4 @@ router.get('/api/restaurants', function(req, res, next){
   .catch(next);
 })
 
-
 module.exports = router;
