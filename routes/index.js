@@ -4,6 +4,9 @@ var Hotel = require('../models/hotel');
 var Restaurant = require('../models/restaurant');
 var Activity = require('../models/activity');
 
+
+
+
 router.get('/', function(req, res, next) {
   Promise.all([
     Hotel.findAll(),
@@ -19,5 +22,7 @@ router.get('/', function(req, res, next) {
   })
   .catch(next);
 });
+
+
 
 module.exports = router;
